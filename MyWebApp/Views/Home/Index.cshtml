@@ -1,0 +1,20 @@
+﻿@using MyWebApp.Entities
+@model List<Produto>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>View</title>
+</head>
+<body>
+    <h2>Produtos</h2>
+    @foreach (var item in Model)
+    {
+        <div>@item.Nome</div>
+    }
+
+
+</body>
+</html>
