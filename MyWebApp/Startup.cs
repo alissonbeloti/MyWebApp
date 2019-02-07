@@ -65,7 +65,7 @@ namespace MyWebApp
                 app.UseHsts();
             }
             
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection(); //Habilita o Https
             app.UseStaticFiles();
             app.UseCookiePolicy();
 

@@ -13,9 +13,20 @@ namespace MyWebApp.AcessoDados
             this.myWebAppContext = context;
         }
 
+        public Produto ObterProdutoPorId(int id)
+        {
+            return this.myWebAppContext.Produtos.SingleOrDefault(x => x.Id == id);
+        }
+
         public List<Produto> Produtos()
         {
             return myWebAppContext.Produtos.ToList();
+        }
+
+        public void Salvar(Produto produto)
+        {
+            myWebAppContext.Produtos.Add(produto);
+            myWebAppContext.SaveChanges();
         }
     }
 }

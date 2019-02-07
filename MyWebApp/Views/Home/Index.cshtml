@@ -9,11 +9,19 @@
     <title>View</title>
 </head>
 <body>
+    <app-root></app-root>
+    <script src="~/AngularApp/dist/es2015-polyfills.js"></script>
+    <script src="~/AngularApp/dist/polyfills.js"></script>
+    <script src="~/AngularApp/dist/runtime.js"></script>
+    <script src="~/AngularApp/dist/styles.js"></script>
+    <script src="~/AngularApp/dist/vendor.js"></script>
+    <script src="~/AngularApp/dist/main.js"></script>
     <h2>Produtos</h2>
     @foreach (var item in Model)
     {
         <div>@item.Nome</div>
     }
+
 
 
 </body>
